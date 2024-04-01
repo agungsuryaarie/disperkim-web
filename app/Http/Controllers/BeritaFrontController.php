@@ -13,7 +13,7 @@ class BeritaFrontController extends Controller
 {
     public function index()
     {
-        $title = 'Berita - Website Resmi Dinas Pemuda, Olahraga dan Pariwisata | Kabupaten Batu Bara';
+        $title = 'Berita - Website Resmi Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup | Kabupaten Batu Bara';
         $menu = 'Berita';
         $pagination = 8;
         $berita = Berita::orderBy('id', 'desc')->latest()->paginate($pagination);
@@ -27,7 +27,7 @@ class BeritaFrontController extends Controller
 
     public function dinas()
     {
-        $title = 'Berita - Website Resmi Dinas Pemuda, Olahraga dan Pariwisata | Kabupaten Batu Bara';
+        $title = 'Berita - Website Resmi Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup | Kabupaten Batu Bara';
         $title2 = 'Kategori Dinas';
         $pagination = 8;
         $berita_dinas = Berita::orderBy('id', 'desc')->where('kategori', '=', 'Dinas')->latest()->paginate($pagination);
@@ -41,7 +41,7 @@ class BeritaFrontController extends Controller
 
     public function pemerintahan()
     {
-        $title = 'Berita - Website Resmi Dinas Pemuda, Olahraga dan Pariwisata | Kabupaten Batu Bara';
+        $title = 'Berita - Website Resmi Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup | Kabupaten Batu Bara';
         $title2 = 'Kategori Pemerintahan';
         $pagination = 8;
         $berita_pemerintahan = Berita::orderBy('id', 'desc')->where('kategori', '=', 'Pemerintahan')->latest()->paginate($pagination);
@@ -55,7 +55,7 @@ class BeritaFrontController extends Controller
 
     public function nasional()
     {
-        $title = 'Berita - Website Resmi Dinas Pemuda, Olahraga dan Pariwisata | Kabupaten Batu Bara';
+        $title = 'Berita - Website Resmi Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup | Kabupaten Batu Bara';
         $title2 = 'Kategori Nasional';
         $pagination = 8;
         $berita_nasional = Berita::orderBy('id', 'desc')->where('kategori', '=', 'Nasional')->latest()->paginate($pagination);

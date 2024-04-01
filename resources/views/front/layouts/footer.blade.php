@@ -4,7 +4,12 @@
             <div class="row px-6">
                 <div class="col-lg-4">
                     <img src="{{ url('front/img/logo-white.png') }}" class="img-footer mb-6">
-                    <p>Website Resmi Dispora Kab. Batu Bara</p>
+                    <div class="social-links text-md-right pt-3 pt-md-0">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+                    </div>
                 </div>
 
                 <div class="col-lg-2 col-md-6 footer-links">
@@ -46,12 +51,6 @@
                     <div class="copyright">
                         Copyright &copy; <?php echo date('Y'); ?> <span>{{ $setting->nama_instansi }}</span>
                     </div>
-                </div>
-                <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@ class MediaController extends Controller
 {
     public function index(Request $request, Foto $id)
     {
-        $title = 'Galeri Foto - Website Resmi Dinas Pemuda, Olahraga dan Pariwisata | Kabupaten Batu Bara';
+        $title = 'Galeri Foto - Website Resmi Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup | Kabupaten Batu Bara';
         $foto = Galeri::orderBy('id', 'desc')->latest()->paginate(20);
         $jml_foto = Foto::where('id')->where('galeri_id', $id)->count();
         $halaman = Halaman::orderBy('id', 'asc')->get();
@@ -27,7 +27,7 @@ class MediaController extends Controller
 
     public function show($id)
     {
-        $title = 'Galeri Foto - Website Resmi Dinas Pemuda, Olahraga dan Pariwisata | Kabupaten Batu Bara';
+        $title = 'Galeri Foto - Website Resmi Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup | Kabupaten Batu Bara';
         $foto = Galeri::orderBy('id', 'desc')->find($id);
         $detail = Foto::where('galeri_id', $id)->get();
         $other = Galeri::inRandomOrder()->limit(4)->get();
@@ -39,7 +39,7 @@ class MediaController extends Controller
 
     public function video()
     {
-        $title = 'Video - Website Resmi Dinas Pemuda, Olahraga dan Pariwisata | Kabupaten Batu Bara';
+        $title = 'Video - Website Resmi Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup | Kabupaten Batu Bara';
         $video = Video::orderBy('id', 'desc')->latest()->paginate(9);
         $halaman = Halaman::orderBy('id', 'asc')->get();
         $layanan = Layanan::orderBy('id', 'asc')->get();
@@ -48,7 +48,7 @@ class MediaController extends Controller
     }
     public function showv(Video $video)
     {
-        $title = 'Video - Website Resmi Dinas Pemuda, Olahraga dan Pariwisata | Kabupaten Batu Bara';
+        $title = 'Video - Website Resmi Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup | Kabupaten Batu Bara';
         $halaman = Halaman::orderBy('id', 'asc')->get();
         $layanan = Layanan::orderBy('id', 'asc')->get();
         $other = Video::inRandomOrder()->limit(4)->get();

@@ -35,7 +35,8 @@
                                         <a href="#"><i class="bi bi-clock"></i> {{ $all->jam }} WIB</a>
                                         <a href="#"><i class="bi bi-eye"></i> {{ $all->viewer }} x</a>
                                     </div>
-                                    <p> {!! Str::limit($all->isi, $limit = 300, $end = '...') !!}</p>
+                                    {{-- <p> {!! Str::limit($all->isi, $limit = 300, $end = '...') !!}</p> --}}
+                                    {!! substr(strip_tags($all->isi), 0, 150) . '...' !!}
                                 </div>
                             </div>
                         @endforeach

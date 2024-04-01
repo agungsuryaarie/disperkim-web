@@ -13,7 +13,7 @@ class HalamanProfilController extends Controller
 {
     public function index($slug)
     {
-        $title = 'Website Resmi Dinas Pemuda, Olahraga dan Pariwisata | Kabupaten Batu Bara';
+        $title = 'Website Resmi Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup | Kabupaten Batu Bara';
         $halaman = Halaman::orderBy('id')->get();
         $profil = Halaman::where('slug', $slug)->orderBy('id')->first();
         $recent_post = Berita::limit(4)->get();

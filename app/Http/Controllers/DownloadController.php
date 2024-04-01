@@ -12,7 +12,7 @@ class DownloadController extends Controller
 {
     public function index()
     {
-        $title = 'Website Resmi Dinas Pemuda, Olahraga dan Pariwisata | Kabupaten Batu Bara';
+        $title = 'Website Resmi Dinas Perumahan Kawasan Permukiman dan Lingkungan Hidup | Kabupaten Batu Bara';
         $download = Filedownload::latest()->paginate(5);
         $halaman = Halaman::orderBy('id', 'asc')->get();
         $layanan = Layanan::orderBy('id', 'asc')->get();
