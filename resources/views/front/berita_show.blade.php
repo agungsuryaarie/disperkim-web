@@ -21,7 +21,7 @@
         <div class="container-sm">
             <div class="row justify-content-center">
                 <div class="col-12 col-xl-8">
-                    <div class="post-details-content bg-white p-30 mb-30 pt-30 bx-shadow">
+                    <div class="post-details-content bg-white p-30 mb-30 mt-30 bx-shadow">
                         <div class="mb-30">
                             <img alt="" src="{{ url('storage/berita/' . $berita->foto) }}" class="img-details">
                         </div>
@@ -36,7 +36,7 @@
                             <p>{!! $berita->isi !!} </p>
                         </div>
                     </div>
-                    <div class="related-post-area bg-white mb-30 p-30 pt-30 bx-shadow">
+                    <div class="related-post-area bg-white mb-30 p-30 mt-30 bx-shadow">
                         <div class="section-heading">
                             <h5>BERITA TERKAIT</h5>
                         </div>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                    <div class="sidebar-area bg-white mb-30 pt-30 bx-shadow">
+                    <div class="sidebar-area bg-white mb-30 mt-30 bx-shadow">
                         <div class="single-sidebar-widget">
                             @foreach ($banner as $b)
                                 <img src="{{ url('storage/banner', $b->gambar) }}" class="img-banner mb-10" alt="">
